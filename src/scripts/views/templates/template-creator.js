@@ -28,7 +28,7 @@ const createRestoDetailTemplate = (restaurant) => `
 const createRestoItemTemplate = (restaurant) => `
 <article class="card-item">
 <img class="card-item__thumbnail lazyload"
-     src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
+     data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
      alt="${restaurant.name} restaurant" tabindex="0">
 <div class="card-item__content">
 <h1 class="card-item__title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h1>  
